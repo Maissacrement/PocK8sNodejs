@@ -14,3 +14,4 @@ jobs:
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           charts-folder: k8s/app
+          deploy-branch: main
