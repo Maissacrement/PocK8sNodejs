@@ -17,4 +17,4 @@ jobs:
           charts_dir: k8s/app
       - name: Debug
         run: |
-          ls
+          ls k8s/app
