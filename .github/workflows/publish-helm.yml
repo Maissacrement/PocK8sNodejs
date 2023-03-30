@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: J12934/helm-gh-pages-action@master
-        with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          charts-folder: k8s/app
-          deploy-branch: main
+      - name: Run chart-releaser
+        uses: helm/chart-releaser-action@v1.5.0
+        env:
+          CR_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          charts_dir: k8s/app
