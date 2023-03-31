@@ -14,7 +14,7 @@ jobs:
         uses: helm/chart-releaser-action@v1.5.0
         env:
           CR_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          charts_dir: k8s/app
+          charts_dir: k8s
       - name: Debug
         run: |
-          ls k8s/app
+          ls
