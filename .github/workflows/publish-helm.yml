@@ -28,7 +28,7 @@ jobs:
         uses: helm/chart-testing-action@v1.0.0-alpha.3
         with:
           command: install
-          
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -43,7 +43,6 @@ jobs:
         uses: helm/chart-releaser-action@v1.5.0
         env:
           CR_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          charts_dir: k8s
       - name: Debug
         run: |
           ls
