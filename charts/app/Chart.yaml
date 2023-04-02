@@ -1,4 +1,4 @@
 name: server
 sources:
 - https://github.com/Maissacrement/PocK8sNodejs
-version: 0.0.1
+version: 0.0.2
