@@ -3,5 +3,5 @@ container:
   name: server
   port: 8080
   image: maissacrement/pock8snodejs
-  tag: 0.0.2
+  tag: 0.0.1
 replicas: 1
